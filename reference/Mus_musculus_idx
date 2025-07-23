@@ -1,0 +1,4 @@
+# run in linux
+# create mus musculus reference index using Kallisto
+
+kallisto index -i Mus_musculus.idx Mus_musculus.GRCm39.cdna.all.fa
