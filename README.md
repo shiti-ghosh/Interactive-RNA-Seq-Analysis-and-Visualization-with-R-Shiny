@@ -57,7 +57,5 @@ For reference: wget "paste the downloadable link of your desired sample/fastq fi
 4. Now we have the FASTQ files, reference index. Now we run the bash script from /upstream_scripts/kallisto_quantification.sh. Please check your data and directory path for each step in the script to match your paths and filenames.
 5. Convert the results to count matrix using the R script under the same directory.
 6. The generated count matrix can now serve as an input for the R Shiny Dashboard. 
-7. 
 
-8. 
 
