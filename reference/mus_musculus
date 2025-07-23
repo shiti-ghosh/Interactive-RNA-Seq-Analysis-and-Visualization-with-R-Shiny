@@ -1,0 +1,4 @@
+# run in linux
+# Download Mus musculus reference transcriptome (release 113)
+wget https://ftp.ensembl.org/pub/release-113/fasta/mus_musculus/cdna/Mus_musculus.GRCm39.cdna.all.fa.gz
+gunzip Mus_musculus.GRCm39.cdna.all.fa.gz
