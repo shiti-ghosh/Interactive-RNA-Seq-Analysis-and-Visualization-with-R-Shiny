@@ -42,3 +42,22 @@ The app calculates the differential expression values for the genes and helps in
 3. Enrichment Pathways
 
 Note: the app may take a few minutes to run in the background and generate results from DESeq2(R). Please be patient.
+
+
+## Upstream : Quantifying Gene Expression with Kallisto
+
+This upstream module prepares and quantifies transcript abundance from single-end RNA-Seq data using Kallisto. It also summarizes transcript-level estimates into a gene-level count matrix for downstream differential expression analysis (e.g., in our R Shiny Dashboard).
+
+Follow the steps to analyse raw RNA-Seq data to count matrix representing expression levels of all genes in every sample:
+
+1. Download the FASTQ files from your desired location using curl or wget. Please be mindful of your location. This step is not mentioned in this pipeline exclusively. However you can refer my previous repository " Bulk RNA-Seq analysis using Makefile" to know the steps in detail. 
+For reference: wget "paste the downloadable link of your desired sample/fastq files"
+2. Download the reference. Since this project( R Shiny Dashboard) deals with Mus musculus sample, our reference is the same. The bash script or "wget<...>" is mentioned in this repository. "/reference/"
+3. Since we are interested in pseudoalignment, we create an index of our reference file for faster pseudoalignment.
+4. Now we have the FASTQ files, reference index. Now we run the bash script from /upstream_scripts/kallisto_quantification.sh. Please check your data and directory path for each step in the script to match your paths and filenames.
+5. Convert the results to count matrix using the R script under the same directory.
+6. The generated count matrix can now serve as an input for the R Shiny Dashboard. 
+7. 
+
+8. 
+
